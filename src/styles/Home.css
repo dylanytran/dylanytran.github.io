@@ -108,7 +108,7 @@
 
 .skills-background p {
   font-family: "PT Sans", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: rgb(255, 255, 255);
   padding-top: 10px;
 }
@@ -192,9 +192,14 @@
     height: 640px;
   }
 
+  .profile-text p {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
   .about-img {
     margin-bottom: 30px;
-    margin-top: -20px;
+    margin-top: -10px;
   }
 
   .about-background {
