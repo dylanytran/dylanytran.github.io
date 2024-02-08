@@ -1,0 +1,207 @@
+.container-fluid {
+  overflow-x: hidden;
+  background-color: #192340;
+}
+
+.row {
+  display: block;
+}
+
+.profile-img {
+  height: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #b1ac91;
+  box-sizing: content-box;
+}
+
+.profile-text {
+  font-family: "PT Sans", sans-serif;
+  text-align: left;
+  color: white;
+}
+
+.profile-text h1 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.name {
+  background-image: linear-gradient(360deg, #3399ff, #00d9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.profile-text p {
+  font-size: 18px;
+}
+
+.profile-background {
+  height: 600px;
+  background-color: #080d1c;
+  box-sizing: content-box;
+}
+
+.socials {
+  color: rgb(255, 255, 255);
+  margin-right: 10px;
+}
+
+.socials:hover {
+  color: #9cffeb;
+}
+
+.about-background {
+  height: 700px;
+  background-color: #0a1328;
+  box-sizing: content-box;
+}
+
+.about-img {
+  height: 420px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: content-box;
+  overflow-x: hidden;
+  border-radius: 20px;
+  border: 1px solid #1e75cc;
+}
+
+.about-text {
+  font-family: "PT Sans", sans-serif;
+  text-align: left;
+}
+
+.about-text h1 {
+  font-size: 30px;
+  font-weight: 600;
+  background-image: linear-gradient(360deg, #3399ff, #00d9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-text p {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+
+.skills-background {
+  height: 480px;
+  background-color: #0f172f;
+  box-sizing: content-box;
+}
+
+.skills-background h1 {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  background-image: linear-gradient(360deg, #3399ff, #00d9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 30px;
+}
+
+.skills-background p {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  padding-top: 10px;
+}
+
+.skills-icon-text {
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #33427a;
+  margin: 50px;
+  padding-top: 20px;
+}
+
+.skills-icon-text:hover {
+  border: 2px solid #2c64b9;
+}
+
+.icons {
+  height: 30px;
+  width: 30px;
+  color: white;
+}
+
+.skills1 {
+  max-width: 1220px !important;
+}
+
+@media (max-width: 990px) {
+  .profile-text {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .profile-img {
+    height: 300px;
+    margin-top: 30px;
+  }
+
+  .profile-text h1 {
+    font-size: 45px;
+    font-weight: 600;
+  }
+
+  .profile-text p {
+    font-size: 18px;
+  }
+
+  .about-text h1 {
+    text-align: left;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+
+  .about-text p {
+    text-align: left;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .about-background {
+    height: 800px;
+  }
+
+  .about-img {
+    height: 300px;
+  }
+
+  .skills-background {
+    height: 720px;
+  }
+}
+
+@media (max-width: 750px) {
+  .skills-background {
+    height: 800px;
+  }
+}
+
+@media (max-width: 570px) {
+  .profile-background {
+    height: 640px;
+  }
+
+  .about-img {
+    margin-bottom: 30px;
+    margin-top: -20px;
+  }
+
+  .about-background {
+    height: 1100px;
+  }
+
+  .skills-icon-text {
+    margin: 30px;
+  }
+}

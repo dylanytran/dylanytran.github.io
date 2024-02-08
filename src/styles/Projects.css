@@ -1,0 +1,142 @@
+.container-fluid {
+  overflow-x: hidden;
+  background-color: #080d1c;
+}
+
+.row {
+  display: block;
+}
+
+.header {
+  padding-top: 60px;
+  background-color: #080d1c;
+}
+
+.header h1 {
+  font-size: 36px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 600;
+  background-image: linear-gradient(180deg, #ffa093, #f05e91);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.projectCard {
+  overflow: hidden;
+}
+
+.project-img {
+  height: 250px;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #5e5e5e;
+  box-sizing: content-box;
+}
+
+.project-text {
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.project-text h1 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #d3aa6e;
+}
+
+.project-text p {
+  font-size: 20px;
+}
+
+.tech {
+  font-size: 18px !important;
+  font-style: italic;
+  color: #a3dbfb;
+}
+
+.project-background {
+  height: 400px;
+  background-color: #080d1c;
+  box-sizing: content-box;
+}
+
+.socials {
+  color: rgb(255, 255, 255);
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.view-code-link {
+  font-family: "PT Sans", sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.view-code-link:hover {
+  color: #9cffeb;
+
+  .socials {
+    color: #9cffeb;
+  }
+}
+
+@media (max-width: 1200px) {
+  .project-background {
+    height: 500px;
+    background-color: #080d1c;
+    box-sizing: content-box;
+  }
+
+  .project-text {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .project-img {
+    height: 240px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .project-text h1 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .project-text p {
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .project-img {
+    height: 210px;
+  }
+  .project-text p {
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 570px) {
+  .project-img {
+    height: 180px;
+  }
+
+  .project-text h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .project-text p {
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
