@@ -35,12 +35,12 @@
 }
 
 .profile-text p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .profile-background {
   height: 600px;
-  background-color: #080d1c;
+  background-color: #000000;
   box-sizing: content-box;
 }
 
@@ -55,7 +55,7 @@
 
 .about-background {
   height: 700px;
-  background-color: #0a1328;
+  background-color: #070e20;
   box-sizing: content-box;
 }
 

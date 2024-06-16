@@ -21,22 +21,22 @@ function Home() {
   return (
     <div className="container-fluid">
       <div className="row justify-content-center align-items-center profile-background">
-        <div className="col-lg-4">
+        <div className="col-lg-5">
           <img className="profile-img" src={image}></img>
         </div>
-        <div className="col-lg-4 profile-text">
+        <div className="col-lg-5 profile-text">
           <h1>
             Hi, I'm <span className="name" style={{ color: "#3399FF" }}>Dylan</span>.
           </h1>
           <p>
-            ➤ Computer science student at the{" "}
+          ↳ Computer Science Student /{" "}
             <span style={{ color: "#FFB646" }}>
               University of Illinois Urbana-Champaign
             </span>
           </p>
           <p>
-            ➤ Currently studying abroad in{" "}
-            <span style={{ color: "#FF6060" }}>Pohang, South Korea 🇰🇷</span>
+          ↳ Software Engineer Intern / {" "}
+            <span style={{ color: "#FF6060" }}>interos.ai</span>
           </p>
           <a
             href="https://www.linkedin.com/in/dylanytran/"
@@ -59,20 +59,18 @@ function Home() {
         <div className="col-lg-4 about-text">
           <h1>⇢ About Me </h1>
           <p>
-            My name is Dylan Tran and I am a second-year computer science
+            My name is Dylan Tran and I am a third-year computer science
             student at the University of Illinois Urbana-Champaign! I was born
             in Chicago, Illinois and grew up in a small suburb north of the
             city. Over the last several years, I have worked on various projects
             relating to iOS and Android app development, web development, game
-            development, and machine learning. This past summer, I interned at
+            development, and machine learning. Last summer, I interned at
             an EdTech company in Chicago where I taught young students
-            object-oriented programming and game design. I am also a course
+            object-oriented programming and game design. This summer, I am working
+            as a software engineer intern at Interos. I am also a course
             assistant for Discrete Structures at UIUC. Away from the computer, I
-            am passionte about table tennis, soccer, working out, and hip-hop
-            music! <br />
-            <br />
-            Currently, I am looking for a Summer 2024 internship. Please feel
-            free to reach out to me if you want to connect!
+            am passionate about table tennis, soccer, working out, and hip-hop
+            music!
           </p>
         </div>
         <div className="col-lg-4">
