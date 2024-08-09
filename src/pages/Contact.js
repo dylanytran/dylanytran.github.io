@@ -48,9 +48,10 @@ function Contact() {
   };
 
   return (
-    <div className="container-fluid">
+    <div className="page-wrapper">
+      <div>
       <div className="row justify-content-start head">
-        <h1>⇢ Get In Touch</h1>
+        <h1>[ Contact Me ]</h1>
       </div>
       <div className="row justify-content-center align-items-center contact-background">
         <div className="col-lg-6">
@@ -58,7 +59,7 @@ function Contact() {
         </div>
         <div className="col-lg-6 justify-content-left">
           <form ref={form} onSubmit={sendEmail}>
-            <h2 className="contact-header">Contact Me </h2>
+            <h2 className="contact-header">Let's Chat </h2>
             <div className="row justify-content-start align-items-center">
               <div className="col-lg-5 col-md-6 col-sm-6 name-form">
                 <input
@@ -106,6 +107,7 @@ function Contact() {
         <div className="email">
           ↳ <Email className="icon" /> dylanytran@gmail.com
         </div>
+      </div>
       </div>
     </div>
   );

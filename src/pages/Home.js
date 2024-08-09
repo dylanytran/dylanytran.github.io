@@ -1,6 +1,10 @@
 import React from "react";
 import image from "../images/profile2.jpg";
 import image2 from "../images/about.jpg";
+import Illinois from "../logos/illinois.png";
+import Interos from "../logos/interos.png";
+import Lavner from "../logos/lavner.png";
+import Postech from "../logos/postech.png";
 import "../styles/Home.css";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import GitHub from "@mui/icons-material/GitHub";
@@ -16,6 +20,7 @@ import { FaCss3Alt } from "react-icons/fa";
 import { FaBootstrap } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaGitAlt } from "react-icons/fa";
+import { SiTailwindcss } from "react-icons/si";
 
 function Home() {
   return (
@@ -26,17 +31,21 @@ function Home() {
         </div>
         <div className="col-lg-5 profile-text">
           <h1>
-            Hi, I'm <span className="name" style={{ color: "#3399FF" }}>Dylan</span>.
+            Hi, I'm{" "}
+            <span className="name" style={{ color: "#3399FF" }}>
+              Dylan
+            </span>
+            .
           </h1>
           <p>
-          ↳ Computer Science Student /{" "}
+            ↳ Computer Science Student{" "}
             <span style={{ color: "#FFB646" }}>
-              University of Illinois Urbana-Champaign
+              [ University of Illinois Urbana-Champaign ]
             </span>
           </p>
           <p>
-          ↳ Software Engineer Intern / {" "}
-            <span style={{ color: "#FF6060" }}>interos.ai</span>
+            ↳ Software Engineer Intern{" "}
+            <span style={{ color: "#FF6060" }}>[ interos.ai ]</span>
           </p>
           <a
             href="https://www.linkedin.com/in/dylanytran/"
@@ -55,83 +64,142 @@ function Home() {
         </div>
       </div>
 
+      <div className="row justify-content-center align-items-center skills-background">
+        <div className="row justify-content-center align-items-center">
+          <h1>[ My Skills ]</h1>
+        </div>
+        <div className="logos">
+          <div className="logos-slide">
+            <div className="icon-container">
+              <SiCplusplus className="icons" />
+              <span className="icon-label">C++</span>
+            </div>
+            <div className="icon-container">
+              <FaPython className="icons" />
+              <span className="icon-label">Python</span>
+            </div>
+            <div className="icon-container">
+              <FaJava className="icons" />
+              <span className="icon-label">Java</span>
+            </div>
+            <div className="icon-container">
+              <FaReact className="icons" />
+              <span className="icon-label">React</span>
+            </div>
+            <div className="icon-container">
+              <RiJavascriptFill className="icons" />
+              <span className="icon-label">JavaScript</span>
+            </div>
+            <div className="icon-container">
+              <BiLogoTypescript className="icons" />
+              <span className="icon-label">TypeScript</span>
+            </div>
+            <div className="icon-container">
+              <FaHtml5 className="icons" />
+              <span className="icon-label">HTML</span>
+            </div>
+            <div className="icon-container">
+              <FaCss3Alt className="icons" />
+              <span className="icon-label">CSS</span>
+            </div>
+            <div className="icon-container">
+              <SiTailwindcss className="icons" />
+              <span className="icon-label">Tailwind</span>
+            </div>
+            <div className="icon-container">
+              <FaBootstrap className="icons" />
+              <span className="icon-label">Bootstrap</span>
+            </div>
+            <div className="icon-container">
+              <FaGitAlt className="icons" />
+              <span className="icon-label">Git</span>
+            </div>
+          </div>
+          <div className="logos-slide">
+            <div className="icon-container">
+              <SiCplusplus className="icons" />
+              <span className="icon-label">C++</span>
+            </div>
+            <div className="icon-container">
+              <FaPython className="icons" />
+              <span className="icon-label">Python</span>
+            </div>
+            <div className="icon-container">
+              <FaJava className="icons" />
+              <span className="icon-label">Java</span>
+            </div>
+            <div className="icon-container">
+              <FaReact className="icons" />
+              <span className="icon-label">React</span>
+            </div>
+            <div className="icon-container">
+              <RiJavascriptFill className="icons" />
+              <span className="icon-label">JavaScript</span>
+            </div>
+            <div className="icon-container">
+              <BiLogoTypescript className="icons" />
+              <span className="icon-label">TypeScript</span>
+            </div>
+            <div className="icon-container">
+              <FaHtml5 className="icons" />
+              <span className="icon-label">HTML</span>
+            </div>
+            <div className="icon-container">
+              <FaCss3Alt className="icons" />
+              <span className="icon-label">CSS</span>
+            </div>
+            <div className="icon-container">
+              <SiTailwindcss className="icons" />
+              <span className="icon-label">Tailwind</span>
+            </div>
+            <div className="icon-container">
+              <FaBootstrap className="icons" />
+              <span className="icon-label">Bootstrap</span>
+            </div>
+            <div className="icon-container">
+              <FaGitAlt className="icons" />
+              <span className="icon-label">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="row justify-content-center align-items-center about-background">
         <div className="col-lg-4 about-text">
-          <h1>⇢ About Me </h1>
+          <h1>[ About Me ]</h1>
           <p>
-            My name is Dylan Tran and I am a third-year computer science
+            My name is Dylan Tran, and I am a third-year computer science
             student at the University of Illinois Urbana-Champaign! I was born
             in Chicago, Illinois and grew up in a small suburb north of the
             city. Over the last several years, I have worked on various projects
             relating to iOS and Android app development, web development, game
-            development, and machine learning. Last summer, I interned at
-            an EdTech company in Chicago where I taught young students
-            object-oriented programming and game design. This summer, I am working
-            as a software engineer intern at Interos. I am also a course
-            assistant for Discrete Structures at UIUC. Away from the computer, I
-            am passionate about table tennis, soccer, working out, and hip-hop
-            music!
+            development, and machine learning. Last summer, I interned at an
+            EdTech company in Chicago where I taught young students
+            object-oriented programming and game design. This summer, I am
+            working as a software engineer intern at Interos. I am also a course
+            assistant for Discrete Structures at UIUC.
           </p>
+          <div className="interests">
+            <div className="interest">Table Tennis 🏓</div>
+            <div className="interest">Soccer ⚽</div>
+            <div className="interest">Hip-Hop 🎤</div>
+            <div className="interest">Chipotle 🌯</div>
+          </div>
         </div>
         <div className="col-lg-4">
           <img className="about-img" src={image2}></img>
         </div>
       </div>
 
-      <div className="row justify-content-center align-items-center skills-background">
-        <div className="row justify-content-center align-items-center skills-header">
-          <h1>⇢ My Skills </h1>
+      <div className="work-background">
+        <div className="row justify-content-center align-items-center">
+          <h1>[ Worked With ]</h1>
         </div>
-        <div className="row justify-content-center align-items-center skills1">
-          <div className="col-lg-1 col-md-2 col-sm-2 col-3 skills-icon-text">
-            <SiCplusplus className="icons" />
-            <p>C++</p>
-          </div>
-
-          <div className="col-lg-1 col-md-2 col-sm-2 col-3 skills-icon-text">
-            <FaPython className="icons" />
-            <p>Python</p>
-          </div>
-
-          <div className="col-lg-1 col-md-2 col-sm-2 col-3 skills-icon-text">
-            <FaJava className="icons" />
-            <p>Java</p>
-          </div>
-
-          <div className="col-lg-1 col-md-2 col-sm-2 col-3 skills-icon-text">
-            <RiJavascriptFill className="icons" />
-            <p>JavaScript</p>
-          </div>
-
-          <div className="col-lg-1 col-md-2 col-sm-2 col-3 skills-icon-text">
-            <FaReact className="icons" />
-            <p>React</p>
-          </div>
-
-          <div className="col-lg-1 col-md-2 col-sm-2 col-3 skills-icon-text">
-            <BiLogoTypescript className="icons" />
-            <p>TypeScript</p>
-          </div>
-
-          <div className="col-lg-1 col-md-2 col-sm-2 col-3 skills-icon-text">
-            <FaHtml5 className="icons" />
-            <p>HTML</p>
-          </div>
-
-          <div className="col-lg-1 col-md-2 col-sm-2 col-3 skills-icon-text">
-            <FaCss3Alt className="icons" />
-            <p>CSS</p>
-          </div>
-
-          <div className="col-lg-1 col-md-2 col-sm-2 col-3 skills-icon-text">
-            <FaBootstrap className="icons" />
-            <p>Bootstrap</p>
-          </div>
-
-          <div className="col-lg-1 col-md-2 col-sm-2 col-3 skills-icon-text">
-            <FaGitAlt className="icons" />
-            <p>Git</p>
-          </div>
+        <div className="company-logos">
+          <img src={Lavner} className="company-logo2" />
+          <img src={Illinois} className="company-logo" />
+          <img src={Postech} className="company-logo" />
+          <img src={Interos} className="company-logo" />
         </div>
       </div>
     </div>

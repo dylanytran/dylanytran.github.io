@@ -1,9 +1,10 @@
 .navbar {
   width: 100%;
   height: 50px;
-  background: #0e152a;
+  background: #000000;
   font-family: "PT Sans", sans-serif;
   font-weight: 100;
+  z-index: 2;
 }
 
 .links {
@@ -13,10 +14,11 @@
   align-items: center;
   justify-content: right;
   color: white;
+  z-index: 5;
 }
 
 .links a.active {
-  color: #3399FF;
+  color: #3399ff;
 }
 
 .navbar a {
@@ -24,10 +26,23 @@
   text-decoration: none;
   margin: 20px;
   font-size: 18px;
+  position: relative;
+  padding-bottom: 5px;
 }
 
-.navbar a:hover {
-  color: #3399FF;
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #3399ff;
+  transition: width 0.4s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
 }
 
 .toggleButton {
@@ -42,6 +57,7 @@
   font-size: 40px;
   margin-bottom: 65px;
 }
+
 .toggleButton button {
   margin-right: 20px;
   background-color: transparent;
@@ -57,11 +73,6 @@
 #open .links {
   flex-direction: column;
   justify-content: flex-start;
-}
-
-#open a {
-  width: 100%;
-  text-align: center;
 }
 
 @media only screen and (max-width: 900px) {
