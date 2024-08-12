@@ -38,21 +38,23 @@
   min-height: 90vh;
 }
 
-.contact-background::before {
-  content: "";
-  position: absolute;
-  top: -180px;
-  left: 50%;
-  width: 800px;
-  height: 300px;
-  background: radial-gradient(
-    circle,
-    rgba(185, 128, 255, 0.35) 0%,
-    rgba(202, 180, 255, 0) 70%
-  );
-  transform: translateX(-50%);
-  filter: blur(100px);
-  z-index: 0;
+@media only screen and (min-width: 600px) {
+  .contact-background::before {
+    content: "";
+    position: absolute;
+    top: -180px;
+    left: 50%;
+    width: 800px;
+    height: 300px;
+    background: radial-gradient(
+      circle,
+      rgba(185, 128, 255, 0.35) 0%,
+      rgba(202, 180, 255, 0) 70%
+    );
+    transform: translateX(-50%);
+    filter: blur(100px);
+    z-index: 0;
+  }
 }
 
 .head {
