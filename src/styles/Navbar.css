@@ -1,20 +1,23 @@
 .navbar {
   width: 100%;
-  height: 50px;
   background: #000000;
   font-family: "PT Sans", sans-serif;
   font-weight: 100;
   z-index: 2;
+  position: relative;
+  overflow: hidden; /* ensure the navbar content is hidden until expanded */
+  transition: height 0.4s ease; /* add a transition to the height */
 }
 
 .links {
   width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: flex-end;
   color: white;
   z-index: 5;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
 }
 
 .links a.active {
@@ -37,7 +40,7 @@
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #3399ff;
+  background-image: linear-gradient(90deg, #3399ff, #00d9ff);
   transition: width 0.4s ease;
 }
 
@@ -47,63 +50,74 @@
 
 .toggleButton {
   width: 100%;
-  height: 100px;
-  display: flex;
+  height: 50px;
+  display: none;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
+  z-index: 10;
 }
 
 .toggleButton svg {
   font-size: 40px;
-  margin-bottom: 65px;
+  margin-right: 20px;
 }
 
 .toggleButton button {
-  margin-right: 20px;
   background-color: transparent;
   border: none;
   color: white;
   cursor: pointer;
 }
 
-#open {
-  height: 50vh;
+#open .navbar {
+  height: 200px; /* Adjust this height based on how much space the expanded menu requires */
 }
 
 #open .links {
-  flex-direction: column;
-  justify-content: flex-start;
+  max-height: 160px;
+  padding: 10px 0; /* Add padding for spacing when expanded */
 }
 
-@media only screen and (max-width: 900px) {
-  .navbar a {
-    width: 70px;
-  }
+#close .navbar {
+  height: 50px; /* Default height when menu is closed */
+}
+
+#close .links {
+  max-height: 0;
+  padding: 0;
 }
 
 @media only screen and (max-width: 600px) {
   .toggleButton {
     display: flex;
   }
-  #close a {
-    display: none;
+  
+  .links {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .navbar a {
+    margin: 10px 20px;
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 601px) {
   .toggleButton {
     display: none;
   }
 
-  .hiddenLinks {
-    display: none;
-  }
-
-  #open {
-    height: 100px;
-  }
-
-  #open .links {
+  .links {
+    max-height: none; /* ensure the links are fully visible on larger screens */
+    padding: 0;
     flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: visible;
+  }
+
+  .navbar {
+    height: 50px; /* default height on larger screens */
   }
 }
