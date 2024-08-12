@@ -2,9 +2,13 @@ import React from "react";
 import image from "../images/profile2.jpg";
 import image2 from "../images/about.jpg";
 import Illinois from "../logos/illinois.png";
+import Illinois2 from "../logos/illinois2.png";
 import Interos from "../logos/interos.png";
+import Interos2 from "../logos/interos2.png";
 import Lavner from "../logos/lavner.png";
+import Lavner2 from "../logos/lavner2.png";
 import Postech from "../logos/postech.png";
+import Postech2 from "../logos/postech2.png";
 import "../styles/Home.css";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import GitHub from "@mui/icons-material/GitHub";
@@ -196,10 +200,18 @@ function Home() {
           <h1>[ Worked With ]</h1>
         </div>
         <div className="company-logos">
-          <img src={Lavner} className="company-logo2" />
-          <img src={Illinois} className="company-logo" />
-          <img src={Postech} className="company-logo" />
-          <img src={Interos} className="company-logo" />
+          <a href="https://www.lavnercamps.com" target="_blank">
+            <div className="lavner-logo"></div>
+          </a>
+          <a href="https://siebelschool.illinois.edu/" target="_blank">
+            <div className="illinois-logo"></div>
+          </a>
+          <a href="https://www.postech.ac.kr/eng/" target="_blank">
+            <div className="postech-logo"></div>
+          </a>
+          <a href="https://interos.ai/" target="_blank">
+            <div className="interos-logo"></div>
+          </a>
         </div>
       </div>
     </div>

@@ -7,9 +7,9 @@ function Navbar() {
     const [expandNavbar, setExpandNavbar] = useState(false);
     const location = useLocation();
 
-    useEffect(() => { // close compressed menu after clicking on page
+    useEffect(() => {
         setExpandNavbar(false);
-    },[location])
+    }, [location]);
 
     return (
         <div className="navbar" id={expandNavbar ? "open" : "close"}>
