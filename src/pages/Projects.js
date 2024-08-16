@@ -17,12 +17,12 @@ function Projects() {
           name="K-Cards"
           desc="Web3 trading card platform with K-pop idol NFTs"
           image={image6}
-          tech="📚 React, TypeScript, Polygon, thirdweb"
+          tech="📚 React, TypeScript, Polygon, Thirdweb"
           link="https://github.com/dylanytran/K-Cards"
         />
         <ProjectCard
           name="True RNG"
-          desc="True random number generator based on large langauge model and atmospheric noise"
+          desc="True random number generator based on hashed LLM responses and atmospheric noise data"
           image={image5}
           tech="📚 React, JavaScript, Django, PyTorch"
           link="https://github.com/dylanytran/true-rng"
@@ -31,7 +31,7 @@ function Projects() {
           name="Statify"
           desc="Web application where users can log in to their Spotify accounts and view their top artists and songs"
           image={image2}
-          tech="📚 React, TypeScript, Node.js"
+          tech="📚 React, TypeScript"
           link="https://github.com/dylanytran/Statify"
         />
         <ProjectCard

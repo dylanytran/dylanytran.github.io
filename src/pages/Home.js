@@ -181,12 +181,13 @@ function Home() {
             EdTech company in Chicago where I taught young students
             object-oriented programming and game design. This summer, I am
             working as a software engineer intern at Interos. I am also a course
-            assistant for Discrete Structures at UIUC.
+            assistant for Discrete Structures at UIUC. Looking for Summer 2025
+            internship opportunities!
           </p>
           <div className="interests">
             <div className="interest">Table Tennis 🏓</div>
             <div className="interest">Soccer ⚽</div>
-            <div className="interest">Hip-Hop 🎤</div>
+            <div className="interest">Hip-Hop 🔥</div>
             <div className="interest">Chipotle 🌯</div>
           </div>
         </div>

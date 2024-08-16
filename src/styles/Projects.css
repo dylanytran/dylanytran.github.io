@@ -51,7 +51,7 @@
       rgba(202, 180, 255, 0) 100%
     );
     transform: translateX(-50%);
-    filter: blur(80px);
+    filter: blur(60px);
     z-index: 0;
   }
 }
