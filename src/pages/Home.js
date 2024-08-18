@@ -48,8 +48,10 @@ function Home() {
             </span>
           </p>
           <p>
-            ↳ Software Engineer Intern{" "}
-            <span style={{ color: "#FF6060" }}>[ interos.ai ]</span>
+            ↳ Looking For{" "}
+            <span style={{ color: "#FF6060" }}>
+              [ Summer 2025 Internship Opportunities ]
+            </span>
           </p>
           <a
             href="https://www.linkedin.com/in/dylanytran/"
@@ -175,14 +177,13 @@ function Home() {
             My name is Dylan Tran, and I am a third-year computer science
             student at the University of Illinois Urbana-Champaign! I was born
             in Chicago, Illinois and grew up in a small suburb north of the
-            city. Over the last several years, I have worked on various projects
-            relating to iOS and Android app development, web development, game
-            development, and machine learning. Last summer, I interned at an
-            EdTech company in Chicago where I taught young students
-            object-oriented programming and game design. This summer, I am
-            working as a software engineer intern at Interos. I am also a course
-            assistant for Discrete Structures at UIUC. Looking for Summer 2025
-            internship opportunities!
+            city. I'm passionate about creating elegant user interfaces, full
+            stack development, and machine learning. Last summer, I interned at
+            an EdTech company in Chicago, where I taught young students
+            object-oriented programming and game design. This summer, I worked
+            as a software engineer intern at Interos, where I developed dashboard
+            UI tools to help customers manage companies within their supply
+            chains. Please don't hesitate to reach out to me!
           </p>
           <div className="interests">
             <div className="interest">Table Tennis 🏓</div>
