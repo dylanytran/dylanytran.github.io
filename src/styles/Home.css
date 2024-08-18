@@ -94,18 +94,20 @@
   position: relative;
 }
 
-.profile-background::before {
-  content: "";
-  position: absolute;
-  top: -100px;
-  left: 50%;
-  width: 750px;
-  height: 250px;
-  background-image: linear-gradient(90deg, #0080ff, #00d9ff, #7a60ff, #ff82a8);
-  background-size: 250% 250%;
-  filter: blur(180px);
-  z-index: 1;
-  animation: gradientAnimation 10s ease infinite;
+@media only screen and (min-width: 600px) {
+  .profile-background::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    width: 750px;
+    height: 250px;
+    background-image: linear-gradient(90deg, #0080ff, #00d9ff, #7a60ff, #ff82a8);
+    background-size: 250% 250%;
+    filter: blur(180px);
+    z-index: 1;
+    animation: gradientAnimation 10s ease infinite;
+  }
 }
 
 .socials {
