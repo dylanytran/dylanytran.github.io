@@ -181,9 +181,10 @@ function Home() {
             stack development, and machine learning. Last summer, I interned at
             an EdTech company in Chicago, where I taught young students
             object-oriented programming and game design. This summer, I worked
-            as a software engineer intern at Interos, where I developed dashboard
-            UI tools to help customers manage companies within their supply
-            chains. Please don't hesitate to reach out to me!
+            as a software engineer intern at Interos, where I developed several
+            dashboard UI tools to help customers manage companies within their
+            supply chains and evaluate risk. Please don't hesitate to reach out
+            to me!
           </p>
           <div className="interests">
             <div className="interest">Table Tennis 🏓</div>
