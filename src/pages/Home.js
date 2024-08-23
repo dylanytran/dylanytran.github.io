@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../images/profile2.jpg";
+import image from "../images/profile3.jpg";
 import image2 from "../images/about.jpg";
 import Illinois from "../logos/illinois.png";
 import Illinois2 from "../logos/illinois2.png";

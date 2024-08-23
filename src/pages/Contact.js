@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "../styles/Contact.css";
-import image from "../images/contact-img2.jpg";
+import image from "../images/contact-img3.jpg";
 import Email from "@mui/icons-material/Email";
 
 function Contact() {
