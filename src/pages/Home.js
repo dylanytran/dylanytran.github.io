@@ -182,7 +182,7 @@ function Home() {
             an EdTech company in Chicago, where I taught young students
             object-oriented programming and game design. This summer, I worked
             as a software engineer intern at Interos, where I developed several
-            dashboard UI tools to help customers manage companies within their
+            dashboard UI tools to help customers monitor companies within their
             supply chains and evaluate risk. Please don't hesitate to reach out
             to me!
           </p>
