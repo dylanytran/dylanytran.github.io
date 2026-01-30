@@ -4,6 +4,7 @@ import image2 from "../images/statify-bg.jpg";
 import image4 from "../images/divinetale-bg.jpg";
 import image5 from "../images/true-rng-bg.jpg";
 import image6 from "../images/kcards.jpg";
+import image7 from "../images/habitat-bg.jpg";
 import "../styles/Projects.css";
 
 function Projects() {
@@ -14,31 +15,38 @@ function Projects() {
       </div>
       <div className="project-list">
         <ProjectCard
+          name="Habitat"
+          desc="Developer tool that simplifies software dependency management using LLMs"
+          image={image7}
+          tech="📚 Python, DeepSeek, Ollama, Tkinter | 2025"
+          link="https://github.com/avi-dhir/habitat"
+        />
+        <ProjectCard
           name="K-Cards"
           desc="Web3 trading card platform with K-pop idol NFTs"
           image={image6}
-          tech="📚 React, TypeScript, Polygon, Thirdweb"
+          tech="📚 React, TypeScript, Polygon, Thirdweb | 2024"
           link="https://github.com/dylanytran/K-Cards"
         />
         <ProjectCard
           name="True RNG"
           desc="True random number generator based on hashed LLM responses and atmospheric noise data"
           image={image5}
-          tech="📚 React, JavaScript, Django, PyTorch"
+          tech="📚 React, JavaScript, Django, PyTorch | 2024"
           link="https://github.com/dylanytran/true-rng"
         />
         <ProjectCard
           name="Statify"
           desc="Web application where users can log in to their Spotify accounts and view their top artists and songs"
           image={image2}
-          tech="📚 React, TypeScript"
+          tech="📚 React, TypeScript, Spotify API | 2023"
           link="https://github.com/dylanytran/Statify"
         />
         <ProjectCard
           name="DIVINETALE"
           desc="A fun and unique spin-off of the 2015 hit game Undertale"
           image={image4}
-          tech="📚 Unity, C#"
+          tech="📚 Unity, C# | 2021"
           link="https://github.com/dylanytran/DIVINETALE-AAD-2021"
         />
       </div>

@@ -1,0 +1,274 @@
+@keyframes fadeSlide {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.experience-background {
+  overflow-x: hidden;
+  background-color: #000000;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 100px 100px;
+  min-height: 100vh;
+}
+
+.experience-header {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  position: relative;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .experience-header::before {
+    content: "";
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    width: 700px;
+    height: 300px;
+    background: radial-gradient(
+      circle,
+      rgba(174, 55, 79, 0.35) 0%,
+      rgba(202, 180, 255, 0) 100%
+    );
+    transform: translateX(-50%);
+    filter: blur(60px);
+    z-index: 0;
+  }
+}
+
+.experience-header h1 {
+  font-size: 20px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 600;
+  background-image: linear-gradient(360deg, #ff5b61, #ff9da0);
+  background-color: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  z-index: 1;
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.job-list {
+  padding: 0 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.jobCard {
+  overflow: hidden;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(-200px);
+  animation: fadeSlide 2s ease-in-out forwards;
+  margin-bottom: 25px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  background: rgba(255, 39, 39, 0.03);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.jobCard:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.job-row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.job-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-shrink: 0;
+  min-width: fit-content;
+}
+
+.job-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(86, 86, 86);
+}
+
+.job-text {
+  font-family: "PT Sans", sans-serif;
+  color: white;
+  text-align: left;
+  z-index: 1;
+  min-width: 0;
+}
+
+.job-header {
+  margin-bottom: 15px;
+}
+
+.job-text h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+.company-name {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.company-name a {
+  color: #fabf9d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.company-name a:hover {
+  color: #ff9f67;
+}
+
+.job-date-location {
+  font-size: 14px;
+  color: #b0b0b0;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.job-date-location .separator {
+  color: #666;
+}
+
+.date {
+  font-weight: 500;
+}
+
+.location {
+  font-weight: 500;
+}
+
+.job-description {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #d0d0d0;
+  margin: 10px 0;
+}
+
+.skills-container {
+  margin-top: 12px;
+}
+
+.skills-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff383;
+  margin-bottom: 10px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  background: rgba(250, 191, 157, 0.15);
+  border: 1px solid rgba(250, 191, 157, 0.3);
+  border-radius: 18px;
+  font-size: 12px;
+  color: #fabf9d;
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: rgba(250, 191, 157, 0.25);
+  border-color: rgba(250, 191, 157, 0.5);
+  transform: translateY(-2px);
+}
+
+/* Stagger animation for multiple job cards */
+.jobCard:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.jobCard:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.jobCard:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.jobCard:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+@media (max-width: 768px) {
+  .job-text h2 {
+    font-size: 20px;
+  }
+
+  .company-name {
+    font-size: 14px;
+  }
+
+  .job-date-location {
+    font-size: 12px;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .date {
+    white-space: nowrap;
+  }
+
+  .job-description {
+    font-size: 14px;
+  }
+
+  .jobCard {
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+
+  .job-logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .job-row {
+    gap: 10px;
+  }
+}

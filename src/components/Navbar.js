@@ -24,6 +24,7 @@ function Navbar() {
             </div>
             <div className="links">
                 <NavLink to="/" exact activeClassName="active"> Home </NavLink>
+                <NavLink to="/experience" activeClassName="active"> Experience </NavLink>
                 <NavLink to="/projects" activeClassName="active"> Projects </NavLink>
                 <NavLink to="/contact" activeClassName="active"> Contact </NavLink>
             </div>

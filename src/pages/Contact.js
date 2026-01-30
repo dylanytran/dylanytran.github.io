@@ -2,112 +2,46 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "../styles/Contact.css";
 import image from "../images/contact-img4.jpg";
+import LinkedIn from "@mui/icons-material/LinkedIn";
+import GitHub from "@mui/icons-material/GitHub";
 import Email from "@mui/icons-material/Email";
 
 function Contact() {
-  const form = useRef();
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    if (!name || !email || !message) {
-      alert("Please fill out all fields. Thank you!");
-      return;
-    }
-
-    emailjs
-      .sendForm("service_v9v6tge", "template_v3phfl6", form.current, {
-        publicKey: "UVPxv0qe3EnR1tUco",
-      })
-      .then(
-        () => {
-          alert("Message sent!");
-          setName("");
-          setEmail("");
-          setMessage("");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
-  };
-
-  const handleNameChange = (e) => {
-    setName(e.target.value);
-  };
-
-  const handleEmailChange = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const handleMessageChange = (e) => {
-    setMessage(e.target.value);
-  };
-
   return (
     <div className="page-wrapper">
-      <div>
       <div className="row justify-content-start head">
         <h1>[ Contact Me ]</h1>
       </div>
       <div className="row justify-content-center align-items-center contact-background">
-        <div className="col-lg-6">
-          <img className="contact-img" src={image}></img>
+        <p className="contact-intro">I'm always open to connecting. Please feel free to reach out!</p>
+        <div className="contact-container">
+          <div className="contact-item">
+            <a
+              href="https://www.linkedin.com/in/dylanytran/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedIn className="contact-icon" />
+            </a>
+            <p className="contact-text">linkedin.com/in/dylanytran</p>
+          </div>
+          <div className="contact-item">
+            <a
+              href="https://github.com/dylanytran"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GitHub className="contact-icon" />
+            </a>
+            <p className="contact-text">github.com/dylanytran</p>
+          </div>
+          <div className="contact-item">
+            <a href="mailto:dylanytran@gmail.com">
+              <Email className="contact-icon" />
+            </a>
+            <p className="contact-text">dylanytran@gmail.com</p>
+          </div>
         </div>
-        <div className="col-lg-6 justify-content-left">
-          <form ref={form} onSubmit={sendEmail}>
-            <h2 className="contact-header">Let's Chat </h2>
-            <div className="row justify-content-start align-items-center">
-              <div className="col-lg-5 col-md-6 col-sm-6 name-form">
-                <input
-                  type="text"
-                  name="user_name"
-                  value={name}
-                  onChange={handleNameChange}
-                  placeholder="Your name"
-                />
-              </div>
-              <div className="col-lg-5 col-md-6 col-sm-6 email-form">
-                <input
-                  type="email"
-                  name="user_email"
-                  value={email}
-                  onChange={handleEmailChange}
-                  placeholder="Your email"
-                />
-              </div>
-            </div>
-
-            <div className="row justify-content-start align-items-center">
-              <div className="col-lg-10">
-                <textarea
-                  name="message"
-                  value={message}
-                  onChange={handleMessageChange}
-                  placeholder="Your message here..."
-                />
-              </div>
-            </div>
-
-            <div className="row justify-content-start align-items-center">
-              <div className="col-lg-3 col-md-3 col-sm-4 col-6">
-                <input
-                  type="submit"
-                  value="Send Message"
-                  className="send-button"
-                />
-              </div>
-            </div>
-          </form>
-        </div>
-
-        <div className="email">
-          ↳ <Email className="icon" /> dylanytran@gmail.com
-        </div>
-      </div>
       </div>
     </div>
   );

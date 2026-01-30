@@ -21,11 +21,8 @@
 .project-background {
   overflow-x: hidden;
   background-color: #000000;
-  background-image: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.1) 1px,
-      transparent 1px
-    ),
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
     linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
   background-size: 100px 100px;
 }
@@ -106,8 +103,7 @@
 }
 
 .tech {
-  font-size: 18px !important;
-  font-style: italic;
+  font-size: 16px !important;
   color: #a3dbfb;
 }
 

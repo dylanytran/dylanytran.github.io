@@ -17,7 +17,9 @@
   color: white;
   z-index: 5;
   overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.4s ease;
+  transition:
+    max-height 0.4s ease,
+    padding 0.4s ease;
 }
 
 .links a.active {
@@ -70,11 +72,11 @@
 }
 
 #open .navbar {
-  height: 200px; /* Adjust this height based on how much space the expanded menu requires */
+  height: 240px; /* Adjust this height based on how much space the expanded menu requires */
 }
 
 #open .links {
-  max-height: 160px;
+  max-height: 240px;
   padding: 10px 0; /* Add padding for spacing when expanded */
 }
 
@@ -91,7 +93,7 @@
   .toggleButton {
     display: flex;
   }
-  
+
   .links {
     flex-direction: column;
     align-items: flex-start;

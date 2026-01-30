@@ -32,11 +32,20 @@
   border-radius: 20px;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid #fff3ac;
+  border: 1px solid #323a45;
   box-sizing: content-box;
   position: relative;
   z-index: 5;
   opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.img-caption {
+  font-size: 14px;
+  color: #aaaaaa;
+  text-align: center;
+  margin-top: 10px;
+  font-family: "PT Sans", sans-serif;
   animation: fadeIn 2s ease-in-out forwards;
 }
 
@@ -102,11 +111,21 @@
     left: 50%;
     width: 750px;
     height: 250px;
-    background-image: linear-gradient(90deg, #0080ff, #00d9ff, #7a60ff, #ff82a8);
+    background-image: linear-gradient(
+      90deg,
+      #ff4000,
+      #ff5e00,
+      #ff9900,
+      #ffc760,
+      #ff98e0,
+      #ff79d7,
+      #7bb4ff,
+      #6453ff
+    );
     background-size: 250% 250%;
     filter: blur(180px);
     z-index: 1;
-    animation: gradientAnimation 10s ease infinite;
+    animation: gradientAnimation 13s ease infinite;
   }
 }
 
@@ -140,7 +159,7 @@
   box-sizing: content-box;
   overflow-x: hidden;
   border-radius: 20px;
-  border: 1px solid #1e75cc;
+  border: 1px solid #323a45;
   opacity: 0;
   animation: fadeIn 2s ease-in-out forwards;
 }
@@ -183,7 +202,7 @@
 }
 
 .skills-background {
-  height: 280px;
+  height: 200px;
   background-color: #000000;
   position: relative;
   box-sizing: content-box;
@@ -216,7 +235,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin: 30px;
+  margin: 20px;
   opacity: 0;
   animation: fadeIn 2s ease-in-out forwards;
 }
@@ -258,7 +277,7 @@
 
 .logos {
   overflow: hidden;
-  padding: 60px 0;
+  padding: 30px 0;
   white-space: nowrap;
   position: relative;
 }
@@ -290,7 +309,7 @@
 .logos-slide {
   display: inline-block;
   white-space: nowrap;
-  animation: slide 30s linear infinite;
+  animation: slide 25s linear infinite;
 }
 
 .logos-slide::after {
@@ -305,7 +324,7 @@
 }
 
 .work-background {
-  height: 240px;
+  height: 220px;
   background-color: #000000;
   position: relative;
   box-sizing: content-box;
@@ -357,7 +376,8 @@
 .lavner-logo,
 .illinois-logo,
 .postech-logo,
-.interos-logo {
+.interos-logo,
+.etsy-logo {
   object-fit: contain;
   width: 170px;
   height: 60px;
@@ -401,6 +421,15 @@
 
 .interos-logo:hover {
   background-image: url("../logos/interos2.png");
+  transform: scale(1.1);
+}
+
+.etsy-logo {
+  background-image: url("../logos/etsy.png");
+}
+
+.etsy-logo:hover {
+  background-image: url("../logos/etsy2.png");
   transform: scale(1.1);
 }
 

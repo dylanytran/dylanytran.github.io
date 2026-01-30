@@ -7,7 +7,7 @@ import "../styles/Footer.css";
 function Footer() {
     return (
         <div className="footer justify-content-center align-items-center" >
-            <p> &copy; Dylan Tran | 2024</p>
+            <p> &copy; Dylan Tran | 2026</p>
             <div className="socialMedia"> 
             <a href="https://www.linkedin.com/in/dylanytran/" target="_blank" rel="noopener noreferrer">
                     <LinkedIn className ="socials"/>
