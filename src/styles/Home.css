@@ -125,7 +125,7 @@
     background-size: 250% 250%;
     filter: blur(180px);
     z-index: 1;
-    animation: gradientAnimation 13s ease infinite;
+    animation: gradientAnimation 14s ease infinite;
   }
 }
 
