@@ -13,7 +13,9 @@ function Contact() {
         <h1>[ Contact Me ]</h1>
       </div>
       <div className="row justify-content-center align-items-center contact-background">
-        <p className="contact-intro">I'm always open to connecting. Please feel free to reach out!</p>
+        <p className="contact-intro">
+          I'm always open to connecting. Please feel free to reach out!
+        </p>
         <div className="contact-container">
           <div className="contact-item">
             <a

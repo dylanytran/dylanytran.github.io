@@ -5,6 +5,7 @@ import image4 from "../images/divinetale-bg.jpg";
 import image5 from "../images/true-rng-bg.jpg";
 import image6 from "../images/kcards.jpg";
 import image7 from "../images/habitat-bg.jpg";
+import image8 from "../images/clove.jpg";
 import "../styles/Projects.css";
 
 function Projects() {
@@ -14,6 +15,13 @@ function Projects() {
         <h1>[ My Projects ]</h1>
       </div>
       <div className="project-list">
+        <ProjectCard
+          name="Clove"
+          desc="Augmented reality healthcare assistant to help elderly adults recall memories, recognize loved ones, and stay safe through real-time support (TreeHacks 2026)"
+          image={image8}
+          tech="📚 Swift, ARKit, OpenAI, Vapi, Zoom Video SDK, Render  | 2026"
+          link="https://github.com/dylanytran/clove"
+        />
         <ProjectCard
           name="Habitat"
           desc="Developer tool that simplifies software dependency management using LLMs"
