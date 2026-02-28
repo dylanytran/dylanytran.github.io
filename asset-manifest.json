@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.64bf395c.css",
+    "main.js": "/static/js/main.fc2bd8e6.js",
+    "static/js/787.c922dae8.chunk.js": "/static/js/787.c922dae8.chunk.js",
+    "static/media/profile.png": "/static/media/profile.353a5d49497ccb723b89.png",
+    "static/media/about2.jpg": "/static/media/about2.982f8b83c29457ca7def.jpg",
+    "static/media/contact-img4.jpg": "/static/media/contact-img4.0d0b5a25bb4c1d0138f5.jpg",
+    "static/media/lavner2.png": "/static/media/lavner2.a820e8fdb4c2e01c2557.png",
+    "static/media/kcards.jpg": "/static/media/kcards.2b73dc25cc6813b53af7.jpg",
+    "static/media/statify-bg.jpg": "/static/media/statify-bg.cc9b5c384bb2c43c74bd.jpg",
+    "static/media/habitat-bg.jpg": "/static/media/habitat-bg.be6ec58422b8362b8968.jpg",
+    "static/media/lavner.png": "/static/media/lavner.3e47e10720e66d739981.png",
+    "static/media/divinetale-bg.jpg": "/static/media/divinetale-bg.4e4f1be07fd65da7d21d.jpg",
+    "static/media/etsy2.png": "/static/media/etsy2.40746d43a4a34a101020.png",
+    "static/media/etsy-icon.png": "/static/media/etsy-icon.66ecdb6d0af2e5b18ae2.png",
+    "static/media/postech2.png": "/static/media/postech2.237c23a006b73311237d.png",
+    "static/media/clove.jpg": "/static/media/clove.c1d9c88f766df6b94226.jpg",
+    "static/media/true-rng-bg.jpg": "/static/media/true-rng-bg.7b19e8e6b847ea5f3fdf.jpg",
+    "index.html": "/index.html",
+    "main.64bf395c.css.map": "/static/css/main.64bf395c.css.map",
+    "main.fc2bd8e6.js.map": "/static/js/main.fc2bd8e6.js.map",
+    "787.c922dae8.chunk.js.map": "/static/js/787.c922dae8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64bf395c.css",
+    "static/js/main.fc2bd8e6.js"
+  ]
+}
